@@ -2,17 +2,28 @@
 <script>
     //Problema: Aumento de Preço
     //Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
-        //- até 280(inclusive): aumento de 20 %
-        //- até 700(inclusive): aumento de 15 %
-        //- até 1500(inclusive): aumento de 10 %
-        //- acima de 1500: aumento de 5 %
-    
+    //- até 280(inclusive): aumento de 20 %
+    //- até 700(inclusive): aumento de 15 %
+    //- até 1500(inclusive): aumento de 10 %
+    //- acima de 1500: aumento de 5 %
+
     //Entrada
+    const produto = Number(prompt("Informe o preco do produto!").trim().replace(",", "."));
 
 
     //Processamento
+    let vinte = produto * 1.20;
+    let quinze = produto * 1.15;
+    let dez = produto * 1.10;
+    let cinco = produto * 1.05;
+    let porcentagem = (produto <= 280 && vinte) ? ` Este prodtuo aumentou 20%, e o preço final é $${vinte.toFixed(2)} `
+        : (produto <= 700 && quinze) ? `Este prodtuo aumentou 15%, e o preço final é $${quinze.toFixed(2)}`
+            : (produto <= 1500 && dez) ? `Este prodtuo aumentou 10%, e o preço final é $${dez.toFixed(2)}`
+                : (produto >= 1500 && cinco) ? `Este prodtuo aumentou 5%, e o preço final é $${cinco.toFixed(2)}`
+                    : `Informe o valor do produto!!!!!`;
 
-    
+
     //Saída
+    alert(`${porcentagem}`);
 
 </script>

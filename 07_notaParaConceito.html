@@ -10,9 +10,17 @@
     // Entre 5.9 e zero            E
 
     //Entrada
+    const nota = Number(prompt("Informe a sua nota").trim().replace(",","."));
+    let A = nota = 10.0 || nota >= 9.0;
+    let B = nota >= 8.0 || nota <= 8.9 ;
+    let C = nota >= 7.9 || nota >= 7.0;
+    let D = nota <= 6.9 || nota <= 6.0;
+    let E = nota <= 5.9;
 
 
     //Processamento
+    conversão = (nota = 10.0 || nota >= 9.0 )? `A sua nota foi convertida para ${A} `
+    : (nota >= 8.0 || nota <= 8.9 ) ? `A usa nota foi convertida para ${B}`
 
     
     //Saída

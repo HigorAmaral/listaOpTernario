@@ -4,13 +4,13 @@
     //Leia a idade de uma pessoa e informe se ela já chegou à maioridade.Se ela ainda não chegou, informe quantos anos faltam para a maioridade.
 
     //Entrada
-const idade = parseInt(prompt("Informe a sua idade!").trim());
+    const idade = parseInt(prompt("Informe a sua idade!").trim());
 
     //Processamento
     let falta = 18 - idade;
-    let maior = ( idade >= 18) ? "Você é de maior!"
-    :(idade <= 17 && falta) ? `Você é de menor, e falta ${falta} ano para ser de maior!!!`
-    : "Informe a sua idade!!!!";
+    let maior = (idade >= 18) ? "Você é de maior!"
+        : (idade <= 17 && falta) ? `Você é de menor, e falta ${falta} ano para ser de maior!!!`
+            : "Informe a sua idade!!!!";
 
 
     //Saída

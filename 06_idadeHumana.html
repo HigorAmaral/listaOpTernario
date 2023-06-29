@@ -8,11 +8,22 @@
     // - cães grandes: fator 7.
 
     //Entrada
+    const idade = Number(prompt("Informe a idade do seu cachorro!").trim());
+    const porte = prompt("Informe o porte do seu cachorro").trim();
+    let fatorCinco = idade * 5;
+    let fatorSeis = idade * 6;
+    let fatorSete = idade * 7;
+
 
 
     //Processamento
+    let anoFator = (idade) ? `o seu cachorro é de porte ${porte} e a idade dele é ${fatorCinco}`
+        : (idade) ? `o seu cachorro é de porte ${porte} e a idade dele é ${fatorSeis}`
+            : (idade) ? `o seu cachorro é de porte ${porte} e a idade dele é ${fatorSete}`
+                : `Informe a idade do seu cahorro!!!!`;
 
-    
+
     //Saída
+    alert(`${anoFator}`);
 
 </script>
