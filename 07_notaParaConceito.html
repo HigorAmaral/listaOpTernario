@@ -11,23 +11,16 @@
 
     //Entrada
     const nota = Number(prompt("Informe a sua nota").trim().replace(",","."));
-    let A = nota = 10.0 || nota >= 9.0;
-    let B = nota >= 8.0 || nota <= 8.9;
-    let C = nota >= 7.9 || nota >= 7.0;
-    let D = nota <= 6.9 || nota <= 6.0;
-    let E = nota <= 5.9;
-
-
     //Processamento
-    conversão = (nota = 10.0 || nota >= 9.0 )? `A sua nota foi convertida para ${A} `
-    : (nota >= 8.0 || nota <= 8.9 ) ? `A usa nota foi convertida para ${B}`
-    : (nota >= 7.9 || nota <= 7.0 ) ? `A usa nota foi convertida para ${C}`
-    : (nota >= 6.9 || nota <= 6.0 ) ? `A usa nota foi convertida para ${D}`
-    : ( nota <= 5.9 ) ? `A usa nota foi convertida para ${E}`
-    : "Informe logo a sua nota!!"
+      resultado = (nota <= 10 && nota >= 9) ? `Sua nota de conceito é A` :
+    (nota <= 8.9 && nota >= 8) ? `Sua nota de conceito é B`:
+    (nota <= 7.9 && nota >= 7) ? `Sua nota de coneito é C`:
+    (nota <= 6.9 && nota >= 6) ? `Sua nota de coneito é D`:
+    (nota <= 5.9) ? `Sua nota de coneito é E` :
+    `Inválido, infomr a sua nota!!!`;
 
     
     //Saída
-    alert(`${conversão}`);
+    alert(`${resultado}`);
 
 </script>
