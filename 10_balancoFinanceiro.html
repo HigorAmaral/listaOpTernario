@@ -10,24 +10,24 @@
     // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
 
     //Entrada
-    const salario = Number(prompt(`Informe o valor do seu salário`).replace(",",".").trim());
-    const agua = Number(prompt(`Informe o valor da conta de água`).replace(",",".").trim());
-    const energia = Number(prompt(`Informe o valor da conta de energia elétrica`).replace(",",".").trim());
-    const telefone = Number(prompt(`Informe o valor da conta de telefone`).replace(",",".").trim());
-    const supermercado = Number(prompt(`Informe o valor da compra de supermercado`).replace(",",".").trim());
-  
+    const salario = Number(prompt(`Informe o valor do seu salário`).replace(",", ".").trim());
+    const agua = Number(prompt(`Informe o valor da conta de água`).replace(",", ".").trim());
+    const energia = Number(prompt(`Informe o valor da conta de energia elétrica`).replace(",", ".").trim());
+    const telefone = Number(prompt(`Informe o valor da conta de telefone`).replace(",", ".").trim());
+    const supermercado = Number(prompt(`Informe o valor da compra de supermercado`).replace(",", ".").trim());
+
 
     //Processamento
     contas = agua + energia + telefone + supermercado;
     final = salario - contas;
     falta = contas - salario;
-    
-    resultado = (salario > contas) ? `O seu salário cobre as suas despesas, sobrando ${final} reais`:
-    (salario < contas) ? `O seu salário não cobre as suas despesas, faltando ${falta} reais`:
-    `Inválido, informe valores!!!`;
 
-    
+    resultado = (salario > contas) ? `O seu salário cobre as suas despesas, sobrando ${final} reais` :
+        (salario < contas) ? `O seu salário não cobre as suas despesas, faltando ${falta} reais` :
+            `Inválido, informe valores!!!`;
+
+
     //Saída
     alert(`${resultado}`);
-    
+
 </script>

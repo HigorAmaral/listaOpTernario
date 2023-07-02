@@ -8,21 +8,21 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-    const horas = Number(prompt(`Informe quantas horas você trabalha semanalmente`).replace(`,`,`.`))
-   const valor = Number(prompt(`Informe quanto você recebe por hora trabalhada`).replace(`,`,`.`))
+    const horas = Number(prompt(`Informe quantas horas você trabalha semanalmente`).replace(`,`, `.`))
+    const valor = Number(prompt(`Informe quanto você recebe por hora trabalhada`).replace(`,`, `.`))
 
 
     //Processamento
-   salarioFinal = (horas *valor);
-   conb = (horas *(valor*0.20));
-   conb2 = (horas *(valor*0.30));
-   resultado = (horas <= 45) ? `Não haverá adicional, o salário final da semana será de $ ${salarioFinal} reais`:
-   (horas <= 60) ? `Haverá um adicional de 20%, o salário final da semana será de $ ${salarioFinal + conb} reais, recebendo ${(valor *0.20) + valor} reais por dia`:
-   (horas > 60) ? `Haverá um adicional de 30%, o salário final da semana será de $ ${salarioFinal + conb2} reais, recebendo ${(valor *0.30) + valor} reais por dia`:
-   `Inválido, informe   as horas!!`;
+    salarioFinal = (horas * valor);
+    conb = (horas * (valor * 0.20));
+    conb2 = (horas * (valor * 0.30));
+    resultado = (horas <= 45) ? `Não haverá adicional, o salário final da semana será de $ ${salarioFinal} reais` :
+        (horas <= 60) ? `Haverá um adicional de 20%, o salário final da semana será de $ ${salarioFinal + conb} reais, recebendo ${(valor * 0.20) + valor} reais por dia` :
+            (horas > 60) ? `Haverá um adicional de 30%, o salário final da semana será de $ ${salarioFinal + conb2} reais, recebendo ${(valor * 0.30) + valor} reais por dia` :
+                `Inválido, informe   as horas!!`;
 
 
-    
+
     //Saída
     alert(`${resultado}`);
 </script>

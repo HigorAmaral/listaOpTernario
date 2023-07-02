@@ -10,16 +10,16 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-    const nota = Number(prompt("Informe a sua nota").trim().replace(",","."));
+    const nota = Number(prompt("Informe a sua nota").trim().replace(",", "."));
     //Processamento
-      resultado = (nota <= 10 && nota >= 9) ? `Sua nota de conceito é A` :
-    (nota <= 8.9 && nota >= 8) ? `Sua nota de conceito é B`:
-    (nota <= 7.9 && nota >= 7) ? `Sua nota de coneito é C`:
-    (nota <= 6.9 && nota >= 6) ? `Sua nota de coneito é D`:
-    (nota <= 5.9) ? `Sua nota de coneito é E` :
-    `Inválido, infomr a sua nota!!!`;
+    resultado = (nota <= 10 && nota >= 9) ? `Sua nota de conceito é A` :
+        (nota <= 8.9 && nota >= 8) ? `Sua nota de conceito é B` :
+            (nota <= 7.9 && nota >= 7) ? `Sua nota de coneito é C` :
+                (nota <= 6.9 && nota >= 6) ? `Sua nota de coneito é D` :
+                    (nota <= 5.9) ? `Sua nota de coneito é E` :
+                        `Inválido, infomr a sua nota!!!`;
 
-    
+
     //Saída
     alert(`${resultado}`);
 
