@@ -13,10 +13,8 @@
 
     //Processamento
     litrototal = litro * litro2;
-    custolit = litro3 + litro3;
-    preco = deslocamento + deslocamento;
-    resultado = (custolit < dp2) ? `O meio de transporte privado (carro / moto) é mais barato que o meio de transporte público e custará ${custolit} reais para ir e voltar` :
-        (custolit > dp2) ? `O meio de transporte público é mais barato que o meio de transporte privado (carro /  moto) e custará ${dp2} reais  para ir e voltar` :
+    resultado = (litrototal < deslocamento) ? `O meio de transporte privado (carro / moto) é mais barato que o meio de transporte público e custará ${litrototal} reais para ir e voltar` :
+        (litrototal > deslocamento) ? `O meio de transporte público é mais barato que o meio de transporte privado (carro /  moto) e custará ${deslocamento} reais  para ir e voltar` :
             `Inválido`;
 
     //Saída
